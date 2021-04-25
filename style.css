@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/micah-boswell-OPnBJ5L2oxs-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main{
+    background-color: rgba(0,0,0,0.2);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left{
+    width: 25%;
+    height: 85%;
+    background-color: #011846;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle{
+    width: 25%;
+    height: 85%;
+    background-image: linear-gradient(to top , #1c0877, #13025e);
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 25%;
+    height: 85%;
+    background-color: #011846;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* STYLING BLOCKS */
+.content{
+    height: 90%;
+    width: 85%;
+}
+.balance p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.balance input.blc{
+    width: 100%;
+    line-height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 1.1rem;
+    color: #000;
+}
+.beer p,.wine p,.pepsi p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.beer input.br,.wine input.wn,.pepsi input.pps{
+    width: 100%;
+    line-height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.cont2{
+    height: 90%;
+    width: 85%;
+}
+.num p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.num input.num{
+    width: 100%;
+    line-height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 1.1rem;
+    color: #000;
+}
+.choice{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.choice label{
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+.add{
+    line-height: 30px;
+    width: 100px;
+    margin-top: 20px;
+    background-color:transparent;
+    border: 1px solid rgb(15, 90, 250);
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.add:active{
+    background-color:rgb(5, 98, 238);
+    outline: none;
+    border: 1px solid rgb(15, 90, 250);
+}
+.purchasedItems{
+    height: 100px;
+    width: 100%;
+    margin-top: 30px
+}
+input[type='radio']{
+    cursor: pointer;
+}
+.text1{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    outline: none;
+}
+.buy{
+    line-height: 30px;
+    width: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color:transparent;
+    border: 1px solid rgb(15, 90, 250);
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+.buy:active{
+    background-color:rgb(5, 98, 238);
+    outline: none;
+    border: 1px solid rgb(15, 90, 250);
+}
+.list{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+}
+.outputText{
+    height: 45%;
+    width: 85%;
+}
+.ot{
+    resize: none;
+    width: 100%;
+    height: 75%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.modal{
+    
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    background-color: rgb(0, 132, 255);
+    border-radius: 10px;
+    width: 750px;
+    height: 200px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.cross{
+    border-bottom: 1px solid rgb(20, 243, 224);
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.cross .cr{
+    margin-right: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.cross .cr::after{
+    content: '\2716';
+    font-size: 1.3rem;
+    color: #fff;
+    transition: .2s;
+    
+}
+.cross .cr:hover::after{
+    color: red;
+    transition: .2s;
+    
+}
+.messege{
+    border-bottom: 1px solid rgb(20, 243, 224);
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.close{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.close .cls{
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    margin-right: 20px;
+    line-height: 25px;
+    width: 80px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .2s ;
+}
+.close .cls:hover{
+    background-color: rgb(255, 10, 71);
+    color: #fff;
+    transition: .2s ;
+}
+.blockItem{
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    animation: appear 1s ease-in-out ;
+}
+.playBeer,.playWine,.playPepsi,.buySound{
+    display: none;
+}
+.yourItem{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.showBlock{
+    display: block;
+}
+
+@keyframes appear{
+    0%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

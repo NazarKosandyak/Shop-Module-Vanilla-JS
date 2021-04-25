@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="content">
+            <form name="myCap">
+                <div class="balance">
+                    <p>Баланс</p>
+                    <input type="text" class="blc" disabled value="2250 грн.">
+                </div>
+                <div class="beer">
+                    <p>Пиво</p>
+                    <input type="text"  class="br" disabled value="100 шт.">
+                </div>
+                <div class="wine">
+                    <p>Вино</p>
+                    <input type="text" class="wn" disabled value="45шт.">
+                </div>
+                <div class="pepsi">
+                    <p>Пепсі</p>
+                    <input type="text" class="pps" disabled value="70шт.">
+                </div>
+            </form>
+        </div>
+        </div>
+        <div class="middle">
+            <div class="cont2">
+                <form name="myMenu">
+                    <div class="num">
+                        <p>Кількість</p>
+                        <input type="number" class="num" name="num" min="1" max="100">
+                    </div>
+                    <div class="choice">
+                        <input type="radio" value="img/beer1.png" class="rad fbeer" name="drink" id="beer">
+                        <label for="beer">Пиво</label>
+                        <input type="radio" value="img/wine.png" class="rad fwine" name="drink" id="wine">
+                        <label for="wine">Вино</label>
+                        <input type="radio" value="img/pep.png" class="rad fpepsi" name="drink" id="pepsi">
+                        <label for="pepsi">Пепсі</label>
+                    </div>
+                    <button class="add" name="add" >Додати</button>
+                    <div class="purchasedItems">
+                        <textarea name="items" disabled class="text1"></textarea>
+                        <button  class="buy">Купити</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <div class="list">
+                <p>Список покупок:</p>
+            </div>
+            <div class="outputText">
+                <textarea name="outTe" class="ot" disabled></textarea>
+                 
+            </div> 
+            <div class="yourItem"></div>
+            <div class="blockItem"></div>
+        </div>
+    </div> 
+    <div class="modal hide">
+        <div class="cross">
+            <button class="cr"></button>
+        </div>
+        <div class="messege">
+            <p class="mt"></p>
+        </div>
+        <div class="close">
+            <button class="cls">Close</button>
+        </div>
+    </div>
+    <audio class="playBeer" data-play="play" src="img/videoplayback (7).mp4" controls></audio>
+    <audio class="playWine" data-play="play" src="img/videoplayback (8).mp4" controls></audio>
+    <audio class="playPepsi" data-play="play" src="img/videoplayback (9).mp4" controls></audio>
+    <audio class="buySound" data-play="play" src="img/Sound_19349.mp3" controls></audio>
+    <script src="main.js"></script>
+    <script src="shopsModule.js"></script>
+</body>
+</html>
